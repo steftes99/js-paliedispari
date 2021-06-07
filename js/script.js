@@ -14,3 +14,21 @@ function pariDispari(){
         document.getElementById('risultato').innerHTML = 'Dispari'
     }
 }
+function palindromo(){
+    var parola = prompt('Inserisci una parola');
+    
+    document.getElementById('parola').innerHTML = parola;
+    
+
+    for (var i = 0; i < parola.length / 2; i++){
+        if(parola[i] !== parola[parola.length - 1 - i]){
+            document.getElementById('palindromo').innerHTML = 'Non palindromo';
+            return false;
+            
+        } 
+            
+        
+    } document.getElementById('palindromo').innerHTML = 'Palindromo';
+    return true;
+
+}
